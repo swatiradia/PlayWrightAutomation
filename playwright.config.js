@@ -38,8 +38,7 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    browserName: 'firefox',
-    headless: false,
+    browserName: 'chromium',
   },
 
   /* Configure projects for major browsers */
@@ -87,7 +86,7 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 
-  
+
 });
 
 
