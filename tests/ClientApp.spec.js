@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test.only('Login into client App', async ({browser,page}) =>
+test('Login into client App', async ({browser,page}) =>
 {
     await page.goto("https://rahulshettyacademy.com/client");
     await page.locator("#userEmail").fill("swati@radia.com");
